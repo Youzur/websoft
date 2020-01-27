@@ -41,6 +41,18 @@ footer {
     background-color: #6e687f;
 }
 
+.duck {
+    width: 128px;
+    height: 128px;
+    border: 1px solid black;
+    background-image: url(../img/duck.png);
+    background-size: 128px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000000;
+}
+
 #myimage {
     display: block;
     margin-left: auto;
