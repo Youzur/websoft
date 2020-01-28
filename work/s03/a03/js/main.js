@@ -8,7 +8,7 @@
             .then((res) => res.json())
             .then((data) => {
                 let output = '<h2>Schools</h2>';
-                data.forEach(function (school) {
+                data.Skolenheter.forEach(function (school) {
                     output += `
                     <ul>
                         <li>Skolenhetskod: ${school.Skolenhetskod}</li>
