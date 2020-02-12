@@ -23,24 +23,26 @@
             })
     }*/
 
+    // UPDATE 1
     function getData() {
         var myList = document.querySelector('ul');
-        fetch('data/1290.json')
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data);
-                //document.getElementById("table").innerHTML = JSON.stringify(data);
 
-                for(var i = 0; i < data.length; i++) {
+        fetch('1290.json')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error("HTTP error, status = " + response.status);
+                }
+                return response.json();
+            })
+            .then(function(json) {
+                for(var i = 0; i < json.Skolenheter.length; i++) {
                     var listItem = document.createElement('li');
-                    listItem.innerHTML = '<strong>' + data[i] + '</strong>';
-                //    listItem.innerHTML += '<strong>' + json.Skolenheter[i].Skolenhetsnamn + '</strong>';
-                 //   listItem.innerHTML += '<strong>' + json.Skolenheter[i].Kommunkod + '</strong>';
-                 //   listItem.innerHTML += '<strong>' + json.Skolenheter[i].PeOrgNr + '</strong>';
+                    listItem.innerHTML = '<strong>' + json.Skolenheter[i].Skolenhetskod + '</strong>';
+                    listItem.innerHTML +='<strong>' + json.Skolenheter[i].Skolenhetsnamn + '</strong>';
+                    listItem.innerHTML +='<strong>' + json.Skolenheter[i].Kommunkod + '</strong>';
+                    listItem.innerHTML +='<strong>' + json.Skolenheter[i].PeOrgNr + '</strong>';
                     myList.appendChild(listItem);
                 }
-
-                document.getElementById('getSchool').style.visibility = 'hidden';
             })
             .catch(function(error) {
                 var p = document.createElement('p');
