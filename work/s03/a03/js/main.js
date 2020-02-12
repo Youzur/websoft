@@ -3,7 +3,7 @@
 
     document.getElementById('getSchool').addEventListener("click", getData);
 
-    function getData() {
+    /*function getData() {
         fetch('data/1290.json')
             .then((res) => res.json())
             .then((data) => {
@@ -21,6 +21,16 @@
                 });
                 document.getElementById('output').innerHTML = output;
             })
+    }*/
+
+    function getData() {
+        fetch('data/1290.json')
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                document.getElementById("table").innerHTML = JSON.stringify(data);
+            })
+
     }
 
 })();
