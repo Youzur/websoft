@@ -15,6 +15,7 @@
             })
             .then(function(json) {
                 console.log(json);
+                document.getElementById('getSchool').style.visibility = 'hidden';
                 for(var i = 0; i < json.Skolenheter.length; i++) {
                     var listItem = document.createElement('li');
                     listItem.innerHTML = '<strong>' + json.Skolenheter[i].Skolenhetskod + '</strong>';
