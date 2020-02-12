@@ -29,6 +29,7 @@
             .then((data) => {
                 console.log(data);
                 document.getElementById("table").innerHTML = JSON.stringify(data);
+                document.getElementById('getSchool').style.visibility = 'hidden';
             })
 
     }
