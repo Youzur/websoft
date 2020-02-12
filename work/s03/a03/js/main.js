@@ -24,14 +24,31 @@
     }*/
 
     function getData() {
+        var myList = document.querySelector('ul');
         fetch('data/1290.json')
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
-                document.getElementById("table").innerHTML = JSON.stringify(data);
+                //document.getElementById("table").innerHTML = JSON.stringify(data);
+
+                for(var i = 0; i < data.Skolenheter.length; i++) {
+                    var listItem = document.createElement('li');
+                    listItem.innerHTML = '<strong>' + json.Skolenheter[i].Skolenhetskod + '</strong>';
+                    listItem.innerHTML += '<strong>' + json.Skolenheter[i].Skolenhetsnamn + '</strong>';
+                    listItem.innerHTML += '<strong>' + json.Skolenheter[i].Kommunkod + '</strong>';
+                    listItem.innerHTML += '<strong>' + json.Skolenheter[i].PeOrgNr + '</strong>';
+                    myList.appendChild(listItem);
+                }
+
                 document.getElementById('getSchool').style.visibility = 'hidden';
             })
-
+            .catch(function(error) {
+                var p = document.createElement('p');
+                p.appendChild(
+                    document.createTextNode('Error: ' + error.message)
+                );
+                document.body.insertBefore(p, myList);
+            });
     }
 
 })();
