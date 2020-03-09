@@ -1,0 +1,11 @@
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.exe
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.deps.json
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.runtimeconfig.json
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.runtimeconfig.dev.json
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.dll
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.pdb
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.csprojAssemblyReference.cache
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.AssemblyInfoInputs.cache
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.AssemblyInfo.cs
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.dll
+Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.pdb
