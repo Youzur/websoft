@@ -33,5 +33,18 @@ namespace myWebApp.Services
                     });
             }
         }
+
+        public IEnumerable<Account> GetIndexAccount(int index)
+        {
+            using (var jsonFileReader = File.OpenText(JsonFileName))
+            {
+                var accountId = JsonSerializer.Deserialize<Account[]>(jsonFileReader.ReadToEnd()
+                return accountId[index],
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+            }
+        }
     }
 }

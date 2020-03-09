@@ -8,7 +8,26 @@
     <h1 class="display-4">Welcome to Assigment 07</h1>
     <p>Here is where the banking magic happens</a>.</p>
 </div>
+<tr>
+    <td>Number</td>
+    <td>Balance</td>
+    <td>Label</td>
+    <td>Owner</td>
+</tr>
+<br></br>
 @foreach (var account in Model.Accounts)
 {
-    <h2>@account.Label</h2>
+    <tr>
+        <td>@account.Number</td>
+    </tr>
+    <tr>
+        <td>@account.Balance</td>
+    </tr>
+    <tr>
+        <td>@account.Label</td>
+    </tr>
+    <tr>
+        <td>@account.Owner</td>
+    </tr>
+    <br></br>
 }
