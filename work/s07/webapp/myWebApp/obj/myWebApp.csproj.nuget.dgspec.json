@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "Y:\\Documents\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj": {}
+    "C:\\Users\\youse\\Desktop\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj": {}
   },
   "projects": {
-    "Y:\\Documents\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj": {
+    "C:\\Users\\youse\\Desktop\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\Documents\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\youse\\Desktop\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj",
         "projectName": "myWebApp",
-        "projectPath": "Y:\\Documents\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj",
-        "packagesPath": "C:\\Users\\YOUZUR\\.nuget\\packages\\",
-        "outputPath": "Y:\\Documents\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\obj\\",
+        "projectPath": "C:\\Users\\youse\\Desktop\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\myWebApp.csproj",
+        "packagesPath": "C:\\Users\\youse\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\youse\\Desktop\\HKr\\Webbutveckling\\websoft\\work\\s07\\webapp\\myWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\YOUZUR\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\youse\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "Y:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

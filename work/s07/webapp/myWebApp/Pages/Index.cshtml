@@ -6,28 +6,23 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Assigment 07</h1>
-    <p>Here is where the banking magic happens</a>.</p>
+    <p>Here is where the banking magic happens.</p>
 </div>
-<tr>
-    <td>Number</td>
-    <td>Balance</td>
-    <td>Label</td>
-    <td>Owner</td>
-</tr>
-<br></br>
-@foreach (var account in Model.Accounts)
-{
+<table class="table">
     <tr>
-        <td>@account.Number</td>
+        @foreach(var property in Model.Accounts.First().GetType().GetProperties())
+        {
+            <th>@property.Name</th>
+        }
     </tr>
-    <tr>
-        <td>@account.Balance</td>
-    </tr>
-    <tr>
-        <td>@account.Label</td>
-    </tr>
-    <tr>
-        <td>@account.Owner</td>
-    </tr>
-    <br></br>
-}
+    
+    @foreach (var account in Model.Accounts)
+    {
+        <tr>
+            <td>@account.Number</td>
+            <td>@account.Balance</td>
+            <td>@account.Label</td>
+            <td>@account.Owner</td>
+        </tr>
+    }
+</table>

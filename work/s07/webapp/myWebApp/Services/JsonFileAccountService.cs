@@ -38,8 +38,7 @@ namespace myWebApp.Services
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
             {
-                var accountId = JsonSerializer.Deserialize<Account[]>(jsonFileReader.ReadToEnd()
-                return accountId[index],
+                return JsonSerializer.Deserialize<Account[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
                     {
                         PropertyNameCaseInsensitive = true

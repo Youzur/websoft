@@ -9,3 +9,14 @@ Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreap
 Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.AssemblyInfo.cs
 Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.dll
 Y:\Documents\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.pdb
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.exe
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.deps.json
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.runtimeconfig.json
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.runtimeconfig.dev.json
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.dll
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\bin\Debug\netcoreapp3.1\app.pdb
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.csprojAssemblyReference.cache
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.AssemblyInfoInputs.cache
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.AssemblyInfo.cs
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.dll
+C:\Users\youse\Desktop\HKr\Webbutveckling\websoft\work\s07\console\app\obj\Debug\netcoreapp3.1\app.pdb

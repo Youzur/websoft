@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using myWebApp.Models;
+using Microsoft.VisualBasic.CompilerServices;
 using myWebApp.Services;
+using myWebApp.Models;
 
 namespace myWebApp.Controllers
 {
@@ -21,5 +23,17 @@ namespace myWebApp.Controllers
         {
             return AccountService.GetAccounts();
         }
+        
+        [HttpGet("{number}")]
+        public IEnumerable<object> Get(int number)
+        {
+            var filteredAccounts =
+                AccountService
+                    .GetAccounts()
+                    .Where(account => account.Number == number)
+                    .ToArray();
+            return filteredAccounts.Any() ? (IEnumerable<object>) filteredAccounts : new[] {"ERROR"};
+        }
+
     }
 }

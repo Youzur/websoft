@@ -3,6 +3,7 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Collections.Generic ;
+using System.Linq;
 
 namespace jsonBank
 {
@@ -40,11 +41,19 @@ namespace jsonBank
                         break;
                     
                     case 2:
+                        var accountId = ReadAccounts();
                         Console.WriteLine("Choose an index of the account: ");
                         Console.Write(">> ");
                         int index = Convert.ToInt32(Console.ReadLine());
 
-                        ReadIndexOfAccounts(index);
+                        var exists = accountId.FirstOrDefault(account => account.Number == index);
+                        if (exists == null)
+                        {
+                            Console.WriteLine("This account does not exists");
+                            break;
+                        }
+                        PrintArray(new []{exists});
+                        break;
 
                         Console.WriteLine();
                         break;
@@ -79,23 +88,23 @@ namespace jsonBank
                 return json;
             }
         }
-        
-        static IEnumerable<Account> ReadIndexOfAccounts(int index)
+
+        private static void PrintArray(IEnumerable<Account> accounts)
         {
-
-            using (StreamReader r = new StreamReader(file))
+            var accountList = accounts.ToList();
+            if (!accountList.Any())
             {
-                string data = r.ReadToEnd();
+                return;
+            }
 
-                var json = JsonSerializer.Deserialize<Account[]>(
-                    data,
-                    new JsonSerializerOptions {
-                        PropertyNameCaseInsensitive = true
-                    }
-                );
-
-                 Console.WriteLine(json[index]);
-                return json;
+            const string lineBreak = "+--------+---------+-----------+-------+";
+            Console.WriteLine(lineBreak);
+            Console.WriteLine("| Number | Balance |   Label   | Owner |");
+            Console.WriteLine(lineBreak);
+            foreach (var account in accountList)
+            {
+                Console.WriteLine($"|{account.Number,8}|{account.Balance,9}|{account.Label,11}|{account.Owner,7}|");
+                Console.WriteLine(lineBreak);
             }
         }
     }
