@@ -16,6 +16,11 @@
             .then(function(json) {
                 console.log(json);
                 document.getElementById('getSchool').style.visibility = 'hidden';
+                var titleItem = document.createElement('tr');
+                titleItem.innerHTML = '<td>Skolenhetskod</td>';
+                titleItem.innerHTML = '<td>Skolenhetsnamn</td>';
+                titleItem.innerHTML = '<td>Kommunkod</td>';
+                titleItem.innerHTML = '<td>PeOrgNr</td>';
                 for(var i = 0; i < json.Skolenheter.length; i++) {
                     var listItem = document.createElement('tr');
                     listItem.innerHTML = '<td>' + json.Skolenheter[i].Skolenhetskod + '</td>';
