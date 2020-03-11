@@ -6,7 +6,7 @@ body {
     background-color: aqua;
 }
 
-ul {
+/*ul {
     list-style-type: none;
     display: flex;
     flex-flow: column;
@@ -29,4 +29,8 @@ strong {
     border-top: 3px solid purple;
     border-bottom: 3px solid purple;
     text-shadow: 2px 2px 1px black;
+}*/
+
+tr {
+    margin: 15px;
 }
