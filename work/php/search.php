@@ -2,8 +2,8 @@
 /**
  * A page controller
  */
-require "data/config.php";
-require "data/function.php";
+//require "data/config.php";
+//require "data/function.php";
 
 // Get incoming values
 $search = $_GET["search"] ?? null;
