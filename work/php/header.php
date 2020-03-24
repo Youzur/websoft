@@ -18,6 +18,7 @@
         <a href="report.php">Report</a> |
         <a href="about.php">About</a> |
         <a href="search.php">Search</a> |
+        <a href="connect.php">SearchAll</a> |
         <a href="update.php">Update</a> |
         <a href="create.php">Insert</a>
     </nav>

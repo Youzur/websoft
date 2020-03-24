@@ -10,15 +10,6 @@ Comments are written as HTML style.
 -->
 
 
-<header>
-    <nav>
-        <a href="me.html">Me</a> |
-        <a href="report.html">Report</a> | 
-        <a href="about.html">About</a>
-    </nav>
-</header>
-
-
 
 <article>
 
@@ -35,11 +26,6 @@ Comments are written as HTML style.
 <p>I love hanging out with friends and meeting new people.</p>
 
 </article>
-
-<footer>
-    <hr>
-    <p>This is brought to you  by me. Please enjoy.</p>
-</footer>
 
 
 
